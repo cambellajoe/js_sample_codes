@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Learn Javascript</title>
+</head>
+<script type="text/javascript">
+
+//objects
+//Math objects
+/*
+document.write(Math.PI);
+document.write("<br/>");
+document.write(Math.sqrt(64));
+document.write("<br/>");
+*/
+
+//Date objects
+function doSomething(){
+	document.write("Tuna ");
+}
+
+//setInterval("doSomething()", 1000);
+</script>
+<body>
+<script type="text/javascript">
+	
+function printTime(){
+	var now = new Date();
+	var hours = now.getHours();
+	var minutes = now.getMinutes();
+	var seconds = now.getSeconds();
+
+	document.write(hours+":"+minutes+":"+seconds+"<br/>");
+}
+setInterval("printTime()", 1000);
+</script>
+</body>
+</html>

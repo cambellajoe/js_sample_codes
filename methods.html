@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Learn Javascript</title>
+</head>
+<script type="text/javascript">
+	function people(name, age){
+		this.name = name;
+		this.age = age;
+		this.yearsUntilRetire = yearsLeft;//the method is a part of this object dont use brackets
+	}
+
+	function yearsLeft(){
+		var numYears = 65 - this.age;
+		return numYears;
+	}
+
+	var natalie = new people("Mutua Joel", 30);
+</script>
+<body>
+<script type="text/javascript">
+	document.write(natalie.yearsUntilRetire());
+</script>
+</body>
+</html>

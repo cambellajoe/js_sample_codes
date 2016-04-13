@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Learn Javascript</title>
+</head>
+<script type="text/javascript">
+
+</script>
+<body>
+<form name="joeForm">
+	Username: <input type="text" name="username"/>
+	Password: <input type="password" name="password"/>
+	<input type="submit" value="Submit!"/> 
+</form>
+<script type="text/javascript">
+	var x = document.forms[0].length;//access the first form
+	var j = document.joeForm.length;
+	document.write(x);//has x number of elements
+
+	//accessing form elements
+	var y = document.forms[0].elements[0].name;//first element in the form and the name
+	document.write(y);
+
+	/*********DIFFERENT APPROACH*******/
+	var z = document.joeForm.elements[1].name;
+	var v = document.joeForm.username.name;
+	document.write(z);
+</script>
+</body>
+</html>

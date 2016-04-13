@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Validation</title>
+<script type="text/javascript">
+	function validateForm(){
+		var x = document.myForm.lname.value;
+		//or
+		var y = document.forms['myForm']['lname'].value;
+
+	if(x == null || x == ""){
+		alert("Lname must be filled out");
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+	<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+		<input type="text" name="fname" required><!--validation from HTML5-->
+		<input type="text" name="lname">
+		<input type="submit" value="submit">
+	</form>
+</body>
+</html>
